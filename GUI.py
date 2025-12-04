@@ -11,7 +11,6 @@ from PyQt5.QtGui import QIcon
 
 
 
-# ---------- Helpers: consistent window sizing/centering & shared styles ----------
 
 APP_STYLES = """
 /* Base */
@@ -143,7 +142,6 @@ def center_and_fix(window, w=1200, h=700):
     window.move(qr.topLeft())
 
 
-# ---------------------------------- Main Window ----------------------------------
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -243,7 +241,6 @@ class MainWindow(QMainWindow):
         self.hide()
 
 
-# ---------------------------------- Show Window ----------------------------------
 
 class ShowWindow(QMainWindow):
     def __init__(self, main_window):
@@ -724,7 +721,7 @@ class AddWindow(QMainWindow):
         self.hide()
 
 
-# ---------------------------------- Edit Window ----------------------------------
+
 
 class EditWindow(QMainWindow):
     def __init__(self, show_window):
@@ -929,7 +926,6 @@ class EditWindow(QMainWindow):
 
 
 
-# ---------------------------------- App entry ----------------------------------
 
 def main():
     app = QApplication(sys.argv)
@@ -940,3 +936,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
